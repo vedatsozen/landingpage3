@@ -63,6 +63,7 @@ button.headerbtn:active {
 .koyurenk1 {
     background-color:#1d414a;
     border-top: 5px solid orangered;
+    
 }
 
 .koyurenk1:hover {
@@ -72,7 +73,6 @@ button.headerbtn:active {
 
 .sectionh1 {
     color:#1d414a;
-    margin-left: 0px !important;
     
 }
 
@@ -80,4 +80,51 @@ button.headerbtn:active {
     background-image: url("imgs/vizyon.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+.hamburger {
+    position: fixed;
+    cursor: pointer;
+    font-size: 10vw;
+}
+
+.hamburger:active {
+    transform: scale(0.8);
+}
+
+#acilirmenu {
+    position: fixed;
+    left: -100vw;
+    z-index: 100;
+    transition: 300ms ease;
+    background-color: #1d414a;
+    height: fit-content;
+}
+
+.acilirmenu > a {
+    background-color: #1d414a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    height: 50px;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+.acilirmenu > a:hover {
+    background-color: orangered;
+}
+
+.acilirmenu > a:active {
+    transform: translateY(3px);
+}
+
+#acilirmenu.acikmenu {
+    position: fixed;
+    left:0vw;
+    transition: 300ms ease;
 }
